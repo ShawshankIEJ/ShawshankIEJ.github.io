@@ -5,31 +5,32 @@ import { HomeFilled, SuccessFilled } from '@element-plus/icons-vue'
 
 // 个人主页
 const home = {
-    name: "My Blog",
-    link: "https://junyaohu.github.io/",
+    name: "",
+    link: "",
 }
 
-// 项目主页
+// // 项目主页
 const logo = {
-    name: "Template",
-    link: "#",
+    name: "",
+    link: "",
 }
 
 // 右侧更多菜单
 const more_paper = {
     "ExtDM": {
-        name: "ExtDM - CVPR 2024",
-        link: "https://zzcheng.top/ExtDM/",
+        name: "",
+        link: "",
     },
     "MPOT": {
-        name: "MPOT - ICCV 2023",
-        link: "https://zzcheng.top/MPOT/",
+        name: "",
+        link: "",
     },
     "ControlNet": {
-        name: "ControlNet - ICCV 2023",
-        link: "https://github.com/lllyasviel/ControlNet",
+        name: "",
+        link: "",
     }
 }
+
 
 </script>
 
