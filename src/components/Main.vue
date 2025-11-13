@@ -19,7 +19,6 @@ export default {
 
 <template>
   <Title/>
-  <Carousel/>
   <Abstract/>
   <Markdown/>
   <BibTeX/>
