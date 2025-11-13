@@ -3,11 +3,9 @@ export default {
   data() {
     return {
       bibtex: [
-        "@article{junyaohu2023template,",
-        "    title={Academic Project Page Template Vue},",
-        "    author={Hu, Junyao},",
-        "    journal={GitHub},",
-        "    year={2023}",
+        "@article{2025Shawshank,",
+        "    title={The Shawshank Redemption of Embodied AI: Understanding and Benchmarking Indirect Environmental Jailbreaks},",
+        "    year={2025}",
         "}",
       ],
     }
