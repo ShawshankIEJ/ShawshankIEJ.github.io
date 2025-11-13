@@ -11,8 +11,7 @@ export default {
     Title,
     Abstract,
     Markdown,
-    BibTeX,
-    Carousel
+    BibTeX
   }
 }
 </script>
