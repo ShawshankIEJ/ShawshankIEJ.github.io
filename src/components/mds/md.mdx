@@ -4,19 +4,22 @@
 
  Our method demonstrates two outcomes: (a) Jailbreaking and (b) Denial-of-Service (DoS) attacks, both leveraging visual environmental manipulation.
 
+---
+
 # Shawshank framework
 
 ![](./figures/attack.png)
 
 The framework includes four modules: (1) the Initialization Module, which defines the task (e.g., damaging water glasses and windows); (2) the Sampling Module, which generates case constraints using genetic algorithms; (3) the Generate Module, which identifies malicious instructions through a generator, surrogate VLM, and evaluator; and (4) the Placement Module, which suggests placement locations for the malicious instruction (e.g., on the wall), and the attack is executed using social engineering techniques.
 
+---
 # Shawshank-Forge framework
 
 ![](./figures/gendataset.png)
 
 The benchmark generation framework collects scene images through random teleportation, extracts object descriptions, filters invalid and similar scenes, and generates both benign and malicious instructions, ensuring semantic richness and diversity.
 
-
+---
 # Shawshank-Bench
 
 ![](./figures/dataset1.png)
@@ -24,32 +27,3 @@ The benchmark generation framework collects scene images through random teleport
 We use the Shawshank-Forge algorithm to generate the Shawshank-Bench dataset. Shawshank-Forge samples 544 distinct scenes covering four indoor settings: kitchen, living room, bedroom, and bathroom from the AI2-THOR environment. The scenes include over one hundred unique interactive objects. \benchname contains 1,632 benign instructions for refusal testing, categorized by difficulty into simple, medium, and complex instructions, and 3,957 malicious instructions for jailbreak testing. The malicious instructions span themes such as damage to creatures, destruction of items, wasting resources, self‑harm/destruction, and invasion of privacy. In addition, we present the top 20 most interactive objects and a word cloud of the instructions.
 
 
-
-
-
-
-# Benchmark Comparison
-
-Shawshank consistently outperforms baseline methods such as Badrobot, RoboPAIR, and Vanilla in all evaluated tasks. For example, in the "Damage Creatures" task, Shawshank achieves an ASR of 0.77 and an HRS of 6.68, which are 126.47\% higher in ASR and 146.50\% higher in HRS than Badrobot-CJ (ASR = 0.34, HRS = 2.71). Similarly, in the "Destruction of Items" task, Shawshank reaches an ASR of 0.84 and an HRS of 6.19, outperforming Badrobot-CJ (ASR = 0.80, HRS = 5.27) by 5\% in ASR and 17.46\% in HRS. Furthermore, in the "Waste Resources" task, \sys improves on RoboPAIR's performance by 13.23\% in ASR (0.77 vs. 0.68) and 22.04\% in HRS (5.98 vs. 4.90). These improvements are highlighted in the "Self Destruction" and "Invasion of Privacy" tasks, where \sys surpasses Badrobot-CJ and RoboPAIR in both metrics. 
-
-Overall, Shawshank's superior performance is consistent across all evaluated tasks, demonstrating improvements ranging from 1.10x to 12.50x in ASR and 1.20x to 11.54x in HRS compared to the best-performing baselines. This substantial improvement underscores Shawshank's effectiveness in inducing malicious behaviors in embodied AI systems, setting it apart from the current state-of-the-art methods. Notably, Shawshank‑Vanilla achieves an overall ASR of 0.57 and HRS of 4.64, representing approximately 96.55\% higher ASR and 104.40\% higher HRS than the direct‑attack baseline Vanilla (ASR 0.29, HRS 2.27), indicating that \attackname is substantially more effective than direct input.
-
-
-|  **Method**           | **DC-ASR** | **DC-HRS** | **DI-ASR** | **DI-HRS** | **WR-ASR** | **WR-HRS** | **SD-ASR** | **SD-HRS** | **IP-ASR** | **IP-HRS** | **Overall-ASR** | **Overall-HRS** |
-| --------------------- |:------:|:-------:|:------:|:-------:|:------:|:-------:|:------:|:-------:|:------:|:-------:|:------:|:-------:|
-| Badrobot-CJ           | 0.34   | 2.71    | 0.80   | 5.27    | 0.70   | 4.92    | 0.45   | 3.63    | 0.43   | 3.59    | 0.56   | 4.00    |
-| Badrobot-CD           | 0.23   | 2.09    | 0.43   | 3.49    | 0.44   | 3.42    | 0.13   | 1.56    | 0.19   | 2.42    | 0.30   | 2.66    |
-| Badrobot-SM           | 0.19   | 1.76    | 0.58   | 3.89    | 0.34   | 3.02    | 0.13   | 1.38    | 0.16   | 1.94    | 0.34   | 2.61    |
-| RoboPAIR             | 0.51   | 3.94    | 0.79   | 5.42    | 0.68   | 4.90    | 0.50   | 4.22    | 0.53   | 4.48    | 0.63   | 4.64    |
-| Cipher               | 0.63   | 4.95    | 0.83   | 5.62    | 0.66   | 4.97    | 0.49   | 3.82    | 0.52   | 4.94    | 0.68   | 5.08    |
-| CodeChameleon        | 0.52   | 4.28    | 0.62   | 4.60    | 0.44   | 3.48    | 0.46   | 4.03    | 0.51   | 4.28    | 0.55   | 4.35    |
-| Deepinception        | 0.28   | 2.34    | 0.60   | 4.10    | 0.42   | 3.58    | 0.29   | 2.56    | 0.24   | 2.48    | 0.41   | 3.11    |
-| GCG                  | 0.11   | 1.22    | 0.40   | 2.71    | 0.25   | 2.01    | 0.09   | 1.16    | 0.12   | 1.53    | 0.23   | 1.85    |
-| Gptfuzzer            | 0.06   | 0.81    | 0.13   | 1.37    | 0.23   | 2.12    | 0.07   | 0.94    | 0.11   | 1.12    | 0.10   | 1.13    |
-| ReNeLLM              | 0.46   | 4.03    | 0.62   | 4.53    | 0.55   | 4.37    | 0.36   | 3.44    | 0.44   | 4.09    | 0.51   | 4.18    |
-| ICA                  | 0.07   | 0.66    | 0.31   | 1.89    | 0.17   | 1.14    | 0.03   | 0.49    | 0.09   | 1.04    | 0.17   | 1.18    |
-| MJP                  | 0.08   | 0.87    | 0.19   | 1.36    | 0.17   | 1.32    | 0.07   | 0.77    | 0.07   | 0.86    | 0.12   | 1.08    |
-| Multilingual         | 0.05   | 0.46    | 0.07   | 0.57    | 0.11   | 1.05    | 0.04   | 0.58    | 0.07   | 0.58    | 0.06   | 0.55    |
-| Vanilla              | 0.15   | 1.40    | 0.52   | 3.49    | 0.29   | 2.69    | 0.11   | 1.21    | 0.13   | 1.71    | 0.29   | 2.27    |
-| Shawshank-Vanilla         | 0.51   | 4.40    | 0.75   | 5.41    | 0.66   | 5.17    | 0.39   | 3.61    | 0.33   | 3.72    | 0.57   | 4.64    |
-| **Shawshank**             | **0.77** | **6.68**  | **0.84** | **6.19**  | **0.77** | **5.98** | **0.58** | **5.35** | **0.54** | **5.18** | **0.75** | **6.13**  |
