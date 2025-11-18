@@ -55,7 +55,7 @@ const tableData4 = [
         <el-divider />
 
         <el-row justify="center">
-            <h1 class="section-title">More Results</h1>
+            <h1 class="section-title">Evaluation</h1>
         </el-row>
         
         <el-row justify="center">
@@ -139,5 +139,6 @@ const tableData4 = [
     margin-top: 20px;
 }
 </style>
+
 
 
