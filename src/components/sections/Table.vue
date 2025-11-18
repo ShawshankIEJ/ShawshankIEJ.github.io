@@ -84,18 +84,18 @@ const tableData4 = [
                     <el-tab-pane label="Jailbreak Attacks" name="Method B">
                         <el-table :data="tableData2" style="table-layout: fixed;">
                             <el-table-column fixed prop="model" label="Model"  width="60" sortable align="center"/>
-                            <el-table-column prop="dc_asr" label="DC-ASR" width="60" sortable align="center"/>
-                            <el-table-column prop="dc_hrs" label="DC-HRS" width="60" sortable align="center"/>
-                            <el-table-column prop="di_asr" label="DI-ASR" width="60" sortable align="center"/>
-                            <el-table-column prop="di_hrs" label="DI-HRS" width="60" sortable align="center"/>
-                            <el-table-column prop="wr_asr" label="WR-ASR" width="60" sortable align="center"/>
-                            <el-table-column prop="wr_hrs" label="WR-HRS" width="60" sortable align="center"/>
-                            <el-table-column prop="sd_asr" label="SD-ASR" width="60" sortable align="center"/>
-                            <el-table-column prop="sd_hrs" label="SD-HRS" width="60" sortable align="center"/>
-                            <el-table-column prop="ip_asr" label="IP-ASR" width="60" sortable align="center"/>
-                            <el-table-column prop="ip_hrs" label="IP-HRS" width="60" sortable align="center"/>
-                            <el-table-column prop="overall_asr" label="Overall-ASR" width="60" sortable align="center"/>
-                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="60" sortable align="center"/>
+                            <el-table-column prop="dc_asr" label="DC-ASR" width="30" sortable align="center"/>
+                            <el-table-column prop="dc_hrs" label="DC-HRS" width="30" sortable align="center"/>
+                            <el-table-column prop="di_asr" label="DI-ASR" width="30" sortable align="center"/>
+                            <el-table-column prop="di_hrs" label="DI-HRS" width="30" sortable align="center"/>
+                            <el-table-column prop="wr_asr" label="WR-ASR" width="30" sortable align="center"/>
+                            <el-table-column prop="wr_hrs" label="WR-HRS" width="30" sortable align="center"/>
+                            <el-table-column prop="sd_asr" label="SD-ASR" width="30" sortable align="center"/>
+                            <el-table-column prop="sd_hrs" label="SD-HRS" width="30" sortable align="center"/>
+                            <el-table-column prop="ip_asr" label="IP-ASR" width="30" sortable align="center"/>
+                            <el-table-column prop="ip_hrs" label="IP-HRS" width="30" sortable align="center"/>
+                            <el-table-column prop="overall_asr" label="Overall-ASR" width="30" sortable align="center"/>
+                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="30" sortable align="center"/>
                         </el-table>
                     </el-tab-pane>
 
