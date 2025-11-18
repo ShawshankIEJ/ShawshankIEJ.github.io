@@ -76,8 +76,8 @@ const tableData4 = [
                             <el-table-column prop="sd_hrs" label="SD-HRS" width="60" sortable align="center"/>
                             <el-table-column prop="ip_asr" label="IP-ASR" width="60" sortable align="center"/>
                             <el-table-column prop="ip_hrs" label="IP-HRS" width="60" sortable align="center"/>
-                            <el-table-column prop="overall_asr" label="Overall-ASR" width="60" sortable align="center"/>
-                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="60" sortable align="center"/>
+                          <!--  <el-table-column prop="overall_asr" label="Overall-ASR" width="60" sortable align="center"/>-->
+                          <!--  <el-table-column prop="overall_hrs" label="Overall-HRS" width="60" sortable align="center"/>-->
                         </el-table>
                     </el-tab-pane>
 
@@ -94,8 +94,8 @@ const tableData4 = [
                             <el-table-column prop="sd_hrs" label="SD-HRS" width="30" sortable align="center"/>
                             <el-table-column prop="ip_asr" label="IP-ASR" width="30" sortable align="center"/>
                             <el-table-column prop="ip_hrs" label="IP-HRS" width="30" sortable align="center"/>
-                            <el-table-column prop="overall_asr" label="Overall-ASR" width="30" sortable align="center"/>
-                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="30" sortable align="center"/>
+                            <!--<el-table-column prop="overall_asr" label="Overall-ASR" width="30" sortable align="center"/> -->
+                           <!-- <el-table-column prop="overall_hrs" label="Overall-HRS" width="30" sortable align="center"/> -->
                         </el-table>
                     </el-tab-pane>
 
