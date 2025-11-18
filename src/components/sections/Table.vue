@@ -136,4 +136,22 @@ const tableData4 = [
 .card {
     margin-top: 20px;
 }
+/* 确保表格容器可横向滚动 */
+.el-table__body-wrapper {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 使表格头部固定 */
+.el-table th {
+    position: sticky;
+    top: 0;
+    background: #fff; /* 给表头添加背景 */
+    z-index: 1; /* 保证表头在上面 */
+}
+
+/* 适当的样式，确保表格有足够的宽度来触发滚动 */
+.el-table {
+    min-width: 1200px;
+}
 </style>
