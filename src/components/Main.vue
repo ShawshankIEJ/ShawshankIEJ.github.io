@@ -1,4 +1,5 @@
 <script>
+import Title from './sections/Title.vue'
 import Evaluation from './sections/Evaluation.vue'
 import Video from './sections/Video.vue'
 import Abstract from './sections/Abstract.vue'
