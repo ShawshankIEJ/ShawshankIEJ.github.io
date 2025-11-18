@@ -64,63 +64,63 @@ const tableData4 = [
                     <el-tabs class="demo-tabs" model-value="Method A">
                     <el-tab-pane label="Comparison of Baselines" name="Method A">
 
-                        <el-table :data="tableData1" :default-sort="{ prop: 'overall_asr', order: 'descending' }" border :layout="'fixed'" style="overflow-x: auto;">
-                            <el-table-column prop="model" label="Method" width="180" sortable align="center"/>
-                            <el-table-column prop="dc_asr" label="DC-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="dc_hrs" label="DC-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="di_asr" label="DI-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="di_hrs" label="DI-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="wr_asr" label="WR-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="wr_hrs" label="WR-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="sd_asr" label="SD-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="sd_hrs" label="SD-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="ip_asr" label="IP-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="ip_hrs" label="IP-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="overall_asr" label="Overall-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="130" sortable align="center"/>
+                        <el-table :data="tableData1" :layout="'fixed'">
+                            <el-table-column prop="model" label="Method" sortable align="center"/>
+                            <el-table-column prop="dc_asr" label="DC-ASR" sortable align="center"/>
+                            <el-table-column prop="dc_hrs" label="DC-HRS" sortable align="center"/>
+                            <el-table-column prop="di_asr" label="DI-ASR" sortable align="center"/>
+                            <el-table-column prop="di_hrs" label="DI-HRS" sortable align="center"/>
+                            <el-table-column prop="wr_asr" label="WR-ASR" sortable align="center"/>
+                            <el-table-column prop="wr_hrs" label="WR-HRS" sortable align="center"/>
+                            <el-table-column prop="sd_asr" label="SD-ASR" sortable align="center"/>
+                            <el-table-column prop="sd_hrs" label="SD-HRS" sortable align="center"/>
+                            <el-table-column prop="ip_asr" label="IP-ASR" sortable align="center"/>
+                            <el-table-column prop="ip_hrs" label="IP-HRS" sortable align="center"/>
+                            <el-table-column prop="overall_asr" label="Overall-ASR" sortable align="center"/>
+                            <el-table-column prop="overall_hrs" label="Overall-HRS" sortable align="center"/>
                         </el-table>
                     </el-tab-pane>
 
                     <el-tab-pane label="Jailbreak Attacks" name="Method B">
-                        <el-table :data="tableData2" :default-sort="{ prop: 'overall_asr', order: 'descending' }" border :layout="'fixed'" style="overflow-x: auto;">
-                            <el-table-column prop="model" label="Model" width="180" sortable align="center"/>
-                            <el-table-column prop="dc_asr" label="DC-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="dc_hrs" label="DC-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="di_asr" label="DI-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="di_hrs" label="DI-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="wr_asr" label="WR-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="wr_hrs" label="WR-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="sd_asr" label="SD-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="sd_hrs" label="SD-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="ip_asr" label="IP-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="ip_hrs" label="IP-HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="overall_asr" label="Overall-ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="130" sortable align="center"/>
+                        <el-table :data="tableData2" ::layout="'fixed'">
+                            <el-table-column prop="model" label="Model"  sortable align="center"/>
+                            <el-table-column prop="dc_asr" label="DC-ASR" sortable align="center"/>
+                            <el-table-column prop="dc_hrs" label="DC-HRS" sortable align="center"/>
+                            <el-table-column prop="di_asr" label="DI-ASR" sortable align="center"/>
+                            <el-table-column prop="di_hrs" label="DI-HRS" sortable align="center"/>
+                            <el-table-column prop="wr_asr" label="WR-ASR" sortable align="center"/>
+                            <el-table-column prop="wr_hrs" label="WR-HRS" sortable align="center"/>
+                            <el-table-column prop="sd_asr" label="SD-ASR" sortable align="center"/>
+                            <el-table-column prop="sd_hrs" label="SD-HRS" sortable align="center"/>
+                            <el-table-column prop="ip_asr" label="IP-ASR" sortable align="center"/>
+                            <el-table-column prop="ip_hrs" label="IP-HRS" sortable align="center"/>
+                            <el-table-column prop="overall_asr" label="Overall-ASR" sortable align="center"/>
+                            <el-table-column prop="overall_hrs" label="Overall-HRS" sortable align="center"/>
                         </el-table>
                     </el-tab-pane>
 
                     <el-tab-pane label="DoS Attacks" name="Method C">
-                        <el-table :data="tableData3" border :layout="'fixed'" style="overflow-x: auto;">
-                            <el-table-column prop="model" label="Model" width="180" sortable align="center"/>
-                            <el-table-column prop="simple_psr_init" label="Simple PSR-init" width="130" sortable align="center"/>
-                            <el-table-column prop="simple_psr_atk" label="Simple PSR-atk" width="130" sortable align="center"/>
-                            <el-table-column prop="medium_psr_init" label="Medium PSR-init" width="130" sortable align="center"/>
-                            <el-table-column prop="medium_psr_atk" label="Medium PSR-atk" width="130" sortable align="center"/>
-                            <el-table-column prop="complex_psr_init" label="Complex PSR-init" width="130" sortable align="center"/>
-                            <el-table-column prop="complex_psr_atk" label="Complex PSR-atk" width="130" sortable align="center"/>
-                            <el-table-column prop="overall_psr_init" label="Overall PSR-init" width="130" sortable align="center"/>
-                            <el-table-column prop="overall_psr_atk" label="Overall PSR-atk" width="130" sortable align="center"/>
-                            <el-table-column prop="drop" label="Drop" width="130" sortable align="center"/>
+                        <el-table :data="tableData3" :layout="'fixed'">
+                            <el-table-column prop="model" label="Model"  sortable align="center"/>
+                            <el-table-column prop="simple_psr_init" label="Simple PSR-init" sortable align="center"/>
+                            <el-table-column prop="simple_psr_atk" label="Simple PSR-atk" sortable align="center"/>
+                            <el-table-column prop="medium_psr_init" label="Medium PSR-init" sortable align="center"/>
+                            <el-table-column prop="medium_psr_atk" label="Medium PSR-atk" sortable align="center"/>
+                            <el-table-column prop="complex_psr_init" label="Complex PSR-init" sortable align="center"/>
+                            <el-table-column prop="complex_psr_atk" label="Complex PSR-atk" sortable align="center"/>
+                            <el-table-column prop="overall_psr_init" label="Overall PSR-init" sortable align="center"/>
+                            <el-table-column prop="overall_psr_atk" label="Overall PSR-atk" sortable align="center"/>
+                            <el-table-column prop="drop" label="Drop" sortable align="center"/>
                         </el-table>
                     </el-tab-pane>
 
                     <el-tab-pane label="Defenses" name="Method D">
-                        <el-table :data="tableData4" border :layout="'fixed'" style="overflow-x: auto;">
-                            <el-table-column prop="model" label="Method" width="180" sortable align="center"/>
-                            <el-table-column prop="qwen3guard_asr" label="Qwen3Guard ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="qwen3guard_hrs" label="Qwen3Guard HRS" width="130" sortable align="center"/>
-                            <el-table-column prop="sap_asr" label="SAP ASR" width="130" sortable align="center"/>
-                            <el-table-column prop="sap_hrs" label="SAP HRS" width="130" sortable align="center"/>
+                        <el-table :data="tableData4" :layout="'fixed'">
+                            <el-table-column prop="model" label="Method"  sortable align="center"/>
+                            <el-table-column prop="qwen3guard_asr" label="Qwen3Guard ASR" sortable align="center"/>
+                            <el-table-column prop="qwen3guard_hrs" label="Qwen3Guard HRS" sortable align="center"/>
+                            <el-table-column prop="sap_asr" label="SAP ASR" sortable align="center"/>
+                            <el-table-column prop="sap_hrs" label="SAP HRS" sortable align="center"/>
                         </el-table>
                     </el-tab-pane>
                     </el-tabs>
@@ -135,23 +135,5 @@ const tableData4 = [
 <style scoped>
 .card {
     margin-top: 20px;
-}
-/* 确保表格容器可横向滚动 */
-.el-table__body-wrapper {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-}
-
-/* 使表格头部固定 */
-.el-table th {
-    position: sticky;
-    top: 0;
-    background: #fff; /* 给表头添加背景 */
-    z-index: 1; /* 保证表头在上面 */
-}
-
-/* 适当的样式，确保表格有足够的宽度来触发滚动 */
-.el-table {
-    min-width: 1200px;
 }
 </style>
