@@ -4,23 +4,41 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 
+const logo = ''
+
+
 const title = 'The Shawshank Redemption of Embodied AI: Understanding and Benchmarking Indirect Environmental Jailbreaks'
 
 
 const title_color = '#000000'
-
 
 const title_supp = ''
 
 
 const title_supp_color = '#42B883'
 
+
 const btn_color = '#444444'
 
 
+const authors = [
+  // {
+  //   name: "Your Name",
+  //   icon: "",
+  //   homepage: "",
+  //   address_flag: "1,#"
+  // },
+]
+
+
+const addresses = []
 
 
 const con_and_corresponding_author = ""
+  // "#: Equal Contribution. *: Corresponding Author."
+
+
+const news = ""
 
 
 const emphases = [
@@ -28,10 +46,18 @@ const emphases = [
 ]
 
 
+const buttons = []
+
 </script>
 
 <template>
   <div>
+
+    <el-row v-if="logo" justify="center">
+      <el-image :src="logo" class="logo" fit="cover" />
+    </el-row>
+
+
     <el-row justify="center">
       <el-col :span="20">
         <h1 class="paper-title">
@@ -41,9 +67,14 @@ const emphases = [
       </el-col>
     </el-row>
 
+
+
+
     <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
         {{ emphasis }}
     </el-row>
+
+
 
   </div>
 </template>
@@ -60,6 +91,7 @@ const emphases = [
 }
 
 
+
 .emphasis {
   color: red;
   font-weight: bold;
@@ -67,6 +99,7 @@ const emphases = [
   font-size: 22px;
   text-align: center;
 }
+
 
 .btn-text {
   font-size: 18px;
@@ -80,6 +113,14 @@ const emphases = [
 .el-alert:first-child {
   margin: 0;
 }
+
+/* .logo {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: #ced3dc 0px 0px 3px 2px;
+  margin-top: 40px;
+} */
 
 
 a:-webkit-any-link {
