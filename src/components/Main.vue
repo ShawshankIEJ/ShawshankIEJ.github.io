@@ -11,8 +11,7 @@ export default {
     Title,
     Abstract,
     Markdown,
-    Table,
-    BibTeX
+    Table
   }
 }
 </script>
