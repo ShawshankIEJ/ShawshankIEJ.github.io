@@ -2,7 +2,7 @@
 import Title from './sections/Title.vue'
 import Abstract from './sections/Abstract.vue'
 import Markdown from './sections/Markdown.vue'
-import BibTeX from './sections/BibTeX.vue'
+import Echart from './sections/Echart.vue'
 import Carousel from './sections/Carousel.vue'
 import Table from './sections/Table.vue'
 
@@ -12,6 +12,7 @@ export default {
     Title,
     Abstract,
     Markdown,
+    Echart,
     Table,
     BibTeX
   }
@@ -22,5 +23,6 @@ export default {
   <Title/>
   <Abstract/>
   <Markdown/>
+  <Echart/>
   <Table/>
 </template>
