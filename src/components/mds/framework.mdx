@@ -1,0 +1,11 @@
+# Shawshank framework
+
+![](./figures/attack.png)
+
+The framework includes four modules: (1) the Initialization Module, which defines the task (e.g., damaging water glasses and windows); (2) the Sampling Module, which generates case constraints using genetic algorithms; (3) the Generate Module, which identifies malicious instructions through a generator, surrogate VLM, and evaluator; and (4) the Placement Module, which suggests placement locations for the malicious instruction (e.g., on the wall), and the attack is executed using social engineering techniques.
+
+# Shawshank-Forge framework
+
+![](./figures/gendataset.png)
+
+Shawshank-Forge generates the benchmark dataset in three main stages: (1) Scene Image Collection, where the embodied agent is randomly teleported within the AI2-THOR environment, generating scene descriptions and extracting interactive objects, followed by filtering invalid or similar images based on CLIP similarity. (2) Instruction Generation, where benign instructions of varying complexity and malicious instructions targeting specific harms (e.g., damaging creatures, destroying items) are created. (3) Database Construction, where scene images are paired with the corresponding instructions to form the final image-instruction dataset for evaluating the security of embodied AI systems.
