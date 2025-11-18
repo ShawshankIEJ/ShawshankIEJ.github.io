@@ -59,8 +59,6 @@ const tableData4 = [
         </el-row>
         
         <el-row justify="center">
-            <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
-
                 <el-card class="card">
                     <el-tabs class="demo-tabs" model-value="Method A">
                     <el-tab-pane label="Comparison of Baselines" name="Method A">
