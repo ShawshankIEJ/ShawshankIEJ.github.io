@@ -137,6 +137,11 @@ const tableData4 = [
 .card {
     margin-top: 20px;
 }
+.ellipsis-column .cell {
+  white-space: nowrap;        
+  overflow: hidden;           
+  text-overflow: ellipsis;     
+}
 </style>
 
 
