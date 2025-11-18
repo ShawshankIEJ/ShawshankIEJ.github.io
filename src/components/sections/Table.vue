@@ -63,7 +63,7 @@ const tableData4 = [
                     <el-tabs class="demo-tabs" model-value="Method A">
                     <el-tab-pane label="Comparison of Baselines" name="Method A">
 
-                        <el-table :data="tableData1" :default-sort="{ prop: 'overall_asr', order: 'descending' }" border :layout="'fixed'">
+                        <el-table :data="tableData1" :default-sort="{ prop: 'overall_asr', order: 'descending' }" border :layout="'fixed'" style="overflow-x: auto;">
                             <el-table-column prop="model" label="Method" width="180" sortable align="center"/>
                             <el-table-column prop="dc_asr" label="DC-ASR" width="130" sortable align="center"/>
                             <el-table-column prop="dc_hrs" label="DC-HRS" width="130" sortable align="center"/>
@@ -81,7 +81,7 @@ const tableData4 = [
                     </el-tab-pane>
 
                     <el-tab-pane label="Jailbreak Attacks" name="Method B">
-                        <el-table :data="tableData2" :default-sort="{ prop: 'overall_asr', order: 'descending' }" border :layout="'fixed'">
+                        <el-table :data="tableData2" :default-sort="{ prop: 'overall_asr', order: 'descending' }" border :layout="'fixed'" style="overflow-x: auto;">
                             <el-table-column prop="model" label="Model" width="180" sortable align="center"/>
                             <el-table-column prop="dc_asr" label="DC-ASR" width="130" sortable align="center"/>
                             <el-table-column prop="dc_hrs" label="DC-HRS" width="130" sortable align="center"/>
@@ -99,7 +99,7 @@ const tableData4 = [
                     </el-tab-pane>
 
                     <el-tab-pane label="DoS Attacks" name="Method C">
-                        <el-table :data="tableData3" border :layout="'fixed'">
+                        <el-table :data="tableData3" border :layout="'fixed'" style="overflow-x: auto;">
                             <el-table-column prop="model" label="Model" width="180" sortable align="center"/>
                             <el-table-column prop="simple_psr_init" label="Simple PSR-init" width="130" sortable align="center"/>
                             <el-table-column prop="simple_psr_atk" label="Simple PSR-atk" width="130" sortable align="center"/>
@@ -114,7 +114,7 @@ const tableData4 = [
                     </el-tab-pane>
 
                     <el-tab-pane label="Defenses" name="Method D">
-                        <el-table :data="tableData4" border :layout="'fixed'">
+                        <el-table :data="tableData4" border :layout="'fixed'" style="overflow-x: auto;">
                             <el-table-column prop="model" label="Method" width="180" sortable align="center"/>
                             <el-table-column prop="qwen3guard_asr" label="Qwen3Guard ASR" width="130" sortable align="center"/>
                             <el-table-column prop="qwen3guard_hrs" label="Qwen3Guard HRS" width="130" sortable align="center"/>
