@@ -59,13 +59,13 @@ const tableData4 = [
         </el-row>
         
         <el-row justify="center">
-            <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="12">
+            <el-col :xs="24" :sm="20" :md="16" :lg="18" :xl="12">
                 <el-card class="card">
                     <el-tabs class="demo-tabs" model-value="Method A">
                     <el-tab-pane label="Comparison of Baselines" name="Method A">
 
-                        <el-table :data="tableData1" style="width: 100%" height="400">
-                            <el-table-column fixed prop="model" label="Method" sortable align="center"/>
+                        <el-table :data="tableData1" style="width: 100%" height="300">
+                            <el-table-column fixed prop="model" label="Method" sortable align="center" width="150"/>
                             <el-table-column prop="dc_asr" label="DC-ASR" sortable align="center"/>
                             <el-table-column prop="dc_hrs" label="DC-HRS" sortable align="center"/>
                             <el-table-column prop="di_asr" label="DI-ASR" sortable align="center"/>
@@ -82,7 +82,7 @@ const tableData4 = [
                     </el-tab-pane>
 
                     <el-tab-pane label="Jailbreak Attacks" name="Method B">
-                        <el-table :data="tableData2" style="width: 100%" height="400">
+                        <el-table :data="tableData2" style="width: 100%" height="300">
                             <el-table-column fixed prop="model" label="Model" sortable align="center"/>
                             <el-table-column prop="dc_asr" label="DC-ASR" sortable align="center"/>
                             <el-table-column prop="dc_hrs" label="DC-HRS" sortable align="center"/>
@@ -100,7 +100,7 @@ const tableData4 = [
                     </el-tab-pane>
 
                     <el-tab-pane label="DoS Attacks" name="Method C">
-                        <el-table :data="tableData3" style="width: 100%" height="400">
+                        <el-table :data="tableData3" style="width: 100%" height="300">
                             <el-table-column fixed prop="model" label="Model"  sortable align="center"/>
                             <el-table-column prop="simple_psr_init" label="Simple PSR-init" sortable align="center"/>
                             <el-table-column prop="simple_psr_atk" label="Simple PSR-atk" sortable align="center"/>
@@ -115,7 +115,7 @@ const tableData4 = [
                     </el-tab-pane>
 
                     <el-tab-pane label="Defenses" name="Method D">
-                        <el-table :data="tableData4" style="width: 100%" height="400">
+                        <el-table :data="tableData4" style="width: 100%" height="300">
                             <el-table-column fixed prop="model" label="Method"  sortable align="center"/>
                             <el-table-column prop="qwen3guard_asr" label="Qwen3Guard ASR" sortable align="center"/>
                             <el-table-column prop="qwen3guard_hrs" label="Qwen3Guard HRS" sortable align="center"/>
