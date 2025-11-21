@@ -64,7 +64,7 @@ const tableData4 = [
                     <el-tabs class="demo-tabs" model-value="Method A">
                     <el-tab-pane label="Comparison of Baselines" name="Method A">
 
-                        <el-table :data="tableData1" style="table-layout: fixed;">
+                        <el-table :data="tableData1" style="width: 100%">
                             <el-table-column fixed prop="model" label="Method" sortable align="center"/>
                             <el-table-column prop="dc_asr" label="DC-ASR" sortable align="center"/>
                             <el-table-column prop="dc_hrs" label="DC-HRS" sortable align="center"/>
@@ -76,13 +76,13 @@ const tableData4 = [
                             <el-table-column prop="sd_hrs" label="SD-HRS" sortable align="center"/>
                             <el-table-column prop="ip_asr" label="IP-ASR" sortable align="center"/>
                             <el-table-column prop="ip_hrs" label="IP-HRS" sortable align="center"/>
-                          <!--  <el-table-column prop="overall_asr" label="Overall-ASR" width="60" sortable align="center"/>-->
-                          <!--  <el-table-column prop="overall_hrs" label="Overall-HRS" width="60" sortable align="center"/>-->
+                            <el-table-column prop="overall_asr" label="Overall-ASR" width="60" sortable align="center"/>
+                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="60" sortable align="center"/>
                         </el-table>
                     </el-tab-pane>
 
                     <el-tab-pane label="Jailbreak Attacks" name="Method B">
-                        <el-table :data="tableData2" style="table-layout: fixed;">
+                        <el-table :data="tableData2" style="width: 100%">
                             <el-table-column fixed prop="model" label="Model" sortable align="center"/>
                             <el-table-column prop="dc_asr" label="DC-ASR" sortable align="center"/>
                             <el-table-column prop="dc_hrs" label="DC-HRS" sortable align="center"/>
@@ -94,13 +94,13 @@ const tableData4 = [
                             <el-table-column prop="sd_hrs" label="SD-HRS" sortable align="center"/>
                             <el-table-column prop="ip_asr" label="IP-ASR" sortable align="center"/>
                             <el-table-column prop="ip_hrs" label="IP-HRS" sortable align="center"/>
-                            <!--<el-table-column prop="overall_asr" label="Overall-ASR" width="30" sortable align="center"/> -->
-                           <!-- <el-table-column prop="overall_hrs" label="Overall-HRS" width="30" sortable align="center"/> -->
+                            <el-table-column prop="overall_asr" label="Overall-ASR" width="30" sortable align="center"/>
+                            <el-table-column prop="overall_hrs" label="Overall-HRS" width="30" sortable align="center"/>
                         </el-table>
                     </el-tab-pane>
 
                     <el-tab-pane label="DoS Attacks" name="Method C">
-                        <el-table :data="tableData3" style="table-layout: fixed;">
+                        <el-table :data="tableData3" style="width: 100%">
                             <el-table-column fixed prop="model" label="Model"  sortable align="center"/>
                             <el-table-column prop="simple_psr_init" label="Simple PSR-init" sortable align="center"/>
                             <el-table-column prop="simple_psr_atk" label="Simple PSR-atk" sortable align="center"/>
@@ -115,7 +115,7 @@ const tableData4 = [
                     </el-tab-pane>
 
                     <el-tab-pane label="Defenses" name="Method D">
-                        <el-table :data="tableData4" style="table-layout: fixed;">
+                        <el-table :data="tableData4" style="width: 100%">
                             <el-table-column fixed prop="model" label="Method"  sortable align="center"/>
                             <el-table-column prop="qwen3guard_asr" label="Qwen3Guard ASR" sortable align="center"/>
                             <el-table-column prop="qwen3guard_hrs" label="Qwen3Guard HRS" sortable align="center"/>

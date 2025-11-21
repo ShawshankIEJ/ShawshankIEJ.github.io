@@ -3,12 +3,6 @@
 
 <template>
   <div>
-    <el-divider />
-
-    <el-row justify="center">
-      <h1 class="section-title">Explainer Video</h1>
-    </el-row>
-    <!-- 每个网站的视频的iframe可能不一致，最好在这里手动调整 -->
     <el-row justify="center">
       <el-col :xs="24" :sm="20" :md="16" :lg="12" :xl="10" >
 

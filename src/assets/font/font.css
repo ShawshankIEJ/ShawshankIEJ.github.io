@@ -4,3 +4,23 @@
     font-weight: normal; 
     font-style: normal;
 }
+
+.el-table__header-wrapper {
+    scrollbar-gutter: stable both-edges;
+}
+
+
+.el-table__header-wrapper table,
+.el-table__body-wrapper table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.el-table th,
+.el-table td {
+    box-sizing: border-box !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

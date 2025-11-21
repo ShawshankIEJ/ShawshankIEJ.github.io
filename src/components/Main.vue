@@ -12,6 +12,7 @@ import Ethics from './sections/Ethics.vue'
 export default {
   components: {
     Title,
+    Video,
     Abstract,
     Markdown,
     Evaluation,
@@ -24,6 +25,7 @@ export default {
 
 <template>
   <Title/>
+  <Video/>
   <Abstract/>
   <Markdown/>
   <Framework/>
