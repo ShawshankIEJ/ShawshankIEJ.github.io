@@ -1,5 +1,6 @@
 <template>
 
+  <el-divider />
   <div class="demo-carousel-container animated fadeInUp">
 
     <div class="top-video-section">
