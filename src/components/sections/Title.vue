@@ -22,12 +22,6 @@ const btn_color = '#444444'
 
 
 const authors = [
-  // {
-  //   name: "Your Name",
-  //   icon: "",
-  //   homepage: "",
-  //   address_flag: "1,#"
-  // },
 ]
 
 
@@ -35,7 +29,7 @@ const addresses = []
 
 
 const con_and_corresponding_author = ""
-  // "#: Equal Contribution. *: Corresponding Author."
+
 
 
 const news = ""
@@ -114,13 +108,6 @@ const buttons = []
   margin: 0;
 }
 
-/* .logo {
-  width: 150px; 
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: #ced3dc 0px 0px 3px 2px;
-  margin-top: 40px;
-} */
 
 
 a:-webkit-any-link {
