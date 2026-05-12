@@ -25,7 +25,7 @@ const tableData2 = [
   { model: 'GPT-4o', dc_asr: 0.50, dc_hrs: 4.17, di_asr: 0.74, di_hrs: 5.02, wr_asr: 0.69, wr_hrs: 4.92, sd_asr: 0.44, sd_hrs: 3.82, ip_asr: 0.43, ip_hrs: 3.97, overall_asr: 0.59, overall_hrs: 4.47 },
   { model: 'GPT-5.5', dc_asr: 0.42, dc_hrs: 4.23, di_asr: 0.62, di_hrs: 4.49, wr_asr: 0.25, wr_hrs: 1.75, sd_asr: 0.22, sd_hrs: 2.22, ip_asr: 0.57, ip_hrs: 5.00, overall_asr: 0.49, overall_hrs: 4.02 },
   { model: 'Qwen3-VL', dc_asr: 0.77, dc_hrs: 6.68, di_asr: 0.84, di_hrs: 6.19, wr_asr: 0.77, wr_hrs: 5.98, sd_asr: 0.58, sd_hrs: 5.35, ip_asr: 0.54, ip_hrs: 5.18, overall_asr: 0.75, overall_hrs: 6.13 },
-  { model: 'Qwen3-VL', dc_asr: 0.61, dc_hrs: 4.65, di_asr: 0.80, di_hrs: 6.51, wr_asr: 0.38, wr_hrs: 5.50, sd_asr: 0.22, sd_hrs: 4.44, ip_asr: 0.57, ip_hrs: 5.29, overall_asr: 0.64, overall_hrs: 5.58 },
+  { model: 'Qwen3.5-plus', dc_asr: 0.61, dc_hrs: 4.65, di_asr: 0.80, di_hrs: 6.51, wr_asr: 0.38, wr_hrs: 5.50, sd_asr: 0.22, sd_hrs: 4.44, ip_asr: 0.57, ip_hrs: 5.29, overall_asr: 0.64, overall_hrs: 5.58 },
   { model: 'Gemini-2.0', dc_asr: 0.62, dc_hrs: 5.42, di_asr: 0.69, di_hrs: 5.02, wr_asr: 0.32, wr_hrs: 3.13, sd_asr: 0.34, sd_hrs: 3.37, ip_asr: 0.24, ip_hrs: 3.01, overall_asr: 0.56, overall_hrs: 4.66 },
   { model: 'Gemini-3.1', dc_asr: 0.39, dc_hrs: 2.81, di_asr: 0.56, di_hrs: 4.22, wr_asr: 0.12, wr_hrs: 1.62, sd_asr: 0.11, sd_hrs: 1.67, ip_asr: 0.14, ip_hrs: 4.14, overall_asr: 0.40, overall_hrs: 3.34 },
   { model: 'GLM-4.5', dc_asr: 0.28, dc_hrs: 3.62, di_asr: 0.35, di_hrs: 3.39, wr_asr: 0.37, wr_hrs: 4.85, sd_asr: 0.26, sd_hrs: 2.90, ip_asr: 0.18, ip_hrs: 2.77, overall_asr: 0.30, overall_hrs: 3.36 },
